@@ -1,0 +1,14 @@
+{
+    "usuarios":[
+        {
+        "id":1,
+        "usuario":"osito",
+        "clave":"c3a690be93aa602ee2dc0ccab5b7b67e"
+        },
+        {
+            "id":2,
+            "usuario":"ivan",
+            "clave":"9d28de8ff9bb6a3fa41fddfdc28f3bc1"
+        }
+    ]
+}
