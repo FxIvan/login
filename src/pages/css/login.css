@@ -1,0 +1,35 @@
+.body-login{
+    background-color: black;
+}
+
+.login-container{
+    width: 30%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+img{
+    width: 40%;
+    border-radius: 50%;
+}
+
+input{
+    width: 50%;
+}
+
+.target-container{
+    border: 2px solid white;
+    border-radius: 4vh;
+    padding: 10vh;
+    background-color: #494749;
+}
+
+label{
+    font-family: 'Cairo', sans-serif;
+    font-size: 6vh;
+    color: #E7CCF8;
+}
+
+.menu-container{
+    background-color: white;
+}
