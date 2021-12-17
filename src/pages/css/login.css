@@ -33,3 +33,8 @@ label{
 .menu-container{
     background-color: white;
 }
+
+span{
+    color: red;
+    font-size: 2vh;
+}

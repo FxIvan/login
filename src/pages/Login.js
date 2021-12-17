@@ -1,6 +1,6 @@
 import axios from 'axios'
 import md5 from 'md5'
-import React,{useState} from 'react'
+import React,{useEffect, useState} from 'react'
 import Cookies from 'universal-cookie/es6'
 import './css/login.css'
 import imgLogo from './img/logo.jpg'
@@ -16,6 +16,7 @@ export const Login = () =>{
         contrasena:''
     })
     const [error,setError] = useState(0)
+    const [passwordIncorrect,setPasswordIncorrect] = useState(false)
 
     const handleInput = (e) =>{
         setInput({
@@ -26,11 +27,10 @@ export const Login = () =>{
 
     const handleError = (e) =>{
         setError(error+1)
-        if(error >= 4){
-            alert("Contraseña Invalida")
+        if(error >= 0){
             setError(0)
+            setPasswordIncorrect(true)
         }
-        console.log(error)
     }
 
     const handleEnviar = (e) =>{
@@ -40,6 +40,7 @@ export const Login = () =>{
         })
         .then(resp=>{
             if(resp.length>0){
+                setPasswordIncorrect(false)
                 const respuesta = resp[0]
                 cookies.set('id', respuesta.id,{path:'/'})
                 cookies.set('usuario', respuesta.usuario, {path:'/'})
@@ -49,6 +50,12 @@ export const Login = () =>{
             }
         })
     }
+
+    useEffect(()=>{
+        if(cookies.get('usuario')){
+            window.location.href='/menu'
+        }
+    },[])
 
     return(
         <div className='body-login'>
@@ -64,6 +71,7 @@ export const Login = () =>{
                         <input type="text" onChange={handleInput} name="usuario" className='form-control' placeholder='Tu usuario'/>
                         <label className='form-label'>contraseña</label>
                         <input type="password" onChange={handleInput} name="contrasena" className='form-control' placeholder='Tu contraseña'/>
+                        { passwordIncorrect ? <span className='row col-12 d-flex justify-content-center'>Contraseña Incorrecta</span> : <></>}
                     <button className='mt-3 btn btn-success' type='submit' onClick={()=>handleEnviar()}>Iniciar Sesion</button>
                 {/*</form>*/}
                 
