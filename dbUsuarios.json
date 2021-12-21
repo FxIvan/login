@@ -3,12 +3,32 @@
         {
         "id":1,
         "usuario":"osito",
-        "clave":"c3a690be93aa602ee2dc0ccab5b7b67e"
+        "clave":"c3a690be93aa602ee2dc0ccab5b7b67e",
+        "datos":[{
+                "dinero":1000,
+                "moneda":"peso",
+                "dineroUSD":22,
+                "monedaUSD":"usd",
+                "bitcoin":0.005,
+                "etheureum":0.02,
+                "thether":10,
+                "pais":"argentina"
+            }]
         },
         {
             "id":2,
             "usuario":"ivan",
-            "clave":"9d28de8ff9bb6a3fa41fddfdc28f3bc1"
+            "clave":"9d28de8ff9bb6a3fa41fddfdc28f3bc1",
+            "datos":[{
+                "dinero":2000,
+                "moneda":"reales",
+                "dineroUSD":315,
+                "monedaUSD":"usd",
+                "bitcoin":0.010,
+                "etheureum":0.52,
+                "thether":25,
+                "pais":"brazil"
+            }]
         }
     ]
 }

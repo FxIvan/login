@@ -44,6 +44,7 @@ export const Login = () =>{
                 const respuesta = resp[0]
                 cookies.set('id', respuesta.id,{path:'/'})
                 cookies.set('usuario', respuesta.usuario, {path:'/'})
+                cookies.set('datos',respuesta.datos , {path:'/'})
                 window.location.href='./menu'
             }else{
                 handleError()
@@ -51,11 +52,11 @@ export const Login = () =>{
         })
     }
 
-    useEffect(()=>{
-        if(cookies.get('usuario')){
-            window.location.href='/menu'
-        }
-    },[])
+    //useEffect(()=>{
+    //    if(cookies.get('usuario')){
+    //        window.location.href='/menu'
+    //    }
+    //},[])
 
     return(
         <div className='body-login'>
