@@ -28,7 +28,9 @@ export const Menu = () => {
   const datosUsuario = datos[0]
   const datosPais = pais[0]
   useEffect(() => {
-    if (!cookies.get('usuario')) window.location.href = './'
+    if (!cookies.get('usuario')){ 
+        window.location.href = './'
+    }
     axios
       .get(url)
       .then((resp) => {

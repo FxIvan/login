@@ -52,11 +52,11 @@ export const Login = () =>{
         })
     }
 
-    //useEffect(()=>{
-    //    if(cookies.get('usuario')){
-    //        window.location.href='/menu'
-    //    }
-    //},[])
+    
+        if(cookies.get('usuario')){
+            window.location.href='/menu'
+        }
+        
 
     return(
         <div className='body-login'>
