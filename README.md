@@ -2,8 +2,8 @@
 >Es un Login echo con React y además utilizamos json-server para levantar un servidor, package como universal-cookie, axios y md5, el como funciona es
 >lo siguiente, ponemos una clave y usuario mencionadas más abajo, si esta clave y usuario funciona esta permite un inicio de sesión pero si se equivoca 
 >este aparece un mensaje que dice "contraseña incorrecta"
-**Dentro de Login**
->Una vez dentro del Login aparecerá el nombre de usuario que inicio sesión, sus criptomonedas y alguna información de sus país como la capital y el presidente.
+**Dentro de Login**.
+>Una vez dentro del Login aparecerá el nombre del usuario que inicio sesión, sus criptomonedas y alguna información de sus país como la capital y el presidente.
 >Solo se puede cerrar sesión haciendo clic en cerrar sesión, si estás dentro de la sesión no podrás volver atrás hasta que cierres sesión.
 
 ## Levantar Servidor dentro de la Consola 
