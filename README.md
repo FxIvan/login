@@ -1,5 +1,5 @@
 ## Funcionamiento
->Es un Login echo con React y además utilizamos json-server para levantar un servidor, package como universal-cookie, axios my md5, el como funciona es
+>Es un Login echo con React y además utilizamos json-server para levantar un servidor, package como universal-cookie, axios y md5, el como funciona es
 >lo siguiente, ponemos una clave y usuario mencionadas más abajo, si esta clave y usuario funciona esta permite un inicio de sesión pero si se equivoca 
 >este aparece un mensaje que dice "contraseña incorrecta"
 **Dentro de Login**
