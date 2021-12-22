@@ -1,0 +1,41 @@
+[33mcommit b33863c0fd77003dc910435b1ac2ef9b5282c18c[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;32mloginTerminado[m[33m)[m
+Author: ivan <almendraivan210814@gmail.com>
+Date:   Wed Dec 22 14:43:39 2021 -0300
+
+    termindo proyecto con react
+
+[33mcommit d8fad06681a6cae9725d3b63bf94fdbdd35833a5[m[33m ([m[1;31morigin/loginTerminado[m[33m)[m
+Author: ivan <almendraivan210814@gmail.com>
+Date:   Wed Dec 22 05:53:30 2021 -0300
+
+    terminando con verificacion de dato segun pais de usuario
+
+[33mcommit e81990beb821ca1732342a4f021cc6a0d31fd192[m
+Author: ivan <almendraivan210814@gmail.com>
+Date:   Mon Dec 20 21:29:37 2021 -0300
+
+    agregando parte de Menu
+
+[33mcommit d0d8b080acf7d4cff0e11a6e8f2f03532e5de17d[m
+Author: ivan <almendraivan210814@gmail.com>
+Date:   Fri Dec 17 15:07:08 2021 -0300
+
+    agregando boton cerrar sesion y alerta de contraseña incorrecta
+
+[33mcommit 9d30313629b61ca7b77b1bead51d0a720bd1e123[m
+Author: ivan <almendraivan210814@gmail.com>
+Date:   Fri Dec 17 14:29:34 2021 -0300
+
+    Terminado la partede Menu y Login
+
+[33mcommit 3f1c810acea132791105a302493d22f0a5c733ba[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: ivan <almendraivan210814@gmail.com>
+Date:   Thu Dec 16 22:40:22 2021 -0300
+
+    first commit
+
+[33mcommit f9d603ed2b599c405f1653c0a4cd0018d338fb39[m
+Author: ivan <almendraivan210814@gmail.com>
+Date:   Thu Dec 16 20:51:26 2021 -0300
+
+    Initialize project using Create React App
