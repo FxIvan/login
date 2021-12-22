@@ -30,5 +30,19 @@
                 "pais":"brazil"
             }]
         }
+    ],
+    "infoPais":[
+        {
+            "argentina":[{
+                "moneda":"ars",
+                "capital":"buenos aires",
+                "presidente":"alberto fernandez"
+            }],
+            "brazil":[{
+                "moneda":"reales",
+                "capital":"brasilia",
+                "presidente":"jair bolsonaro"
+            }]
+        }
     ]
 }

@@ -1,4 +1,6 @@
+import axios from 'axios'
 import React,{useEffect} from 'react'
+import { useState } from 'react/cjs/react.development'
 import Cookies from 'universal-cookie/es6'
 //Imagenes Crypto
 import bitcoinicon from './img/iconCrypto/bitcoinicon.png'
@@ -6,6 +8,11 @@ import etheureumicon from './img/iconCrypto/etheureumicon.png'
 import thethericon from './img/iconCrypto/thethericon.png'
 
 export const Menu = () =>{
+    const [pais,setPais] = useState([])
+
+
+    const url = "http://localhost:3001/infoPais"
+
 
     const cookies = new Cookies()
     const handleCerrar = () =>{
@@ -18,14 +25,33 @@ export const Menu = () =>{
     const id = cookies.get('id')
     const usuario = cookies.get('usuario')
     const datos = cookies.get('datos')
-    
-    const datosUsuario = datos[0]
 
+    const datosUsuario = datos[0]
+    const datosPais = pais[0]
     useEffect(()=>{
         if(!cookies.get('usuario'))
         window.location.href='./'
+        axios.get(url)
+        .then(resp=>{
+            resp.data.map(reps=>{
+                const paisArray = Object.keys(reps)
+                for(let xs of paisArray){
+                    if(xs === datosUsuario.pais){
+                        const infoPais =  reps[xs].map(resp=>{
+                            return resp
+                        })//reps[xs]
+                        const info = infoPais[0]
+                        setPais(info)
+                    }
+                }
+            })
+        })
+        .catch(err=>{
+            console.log(err)
+        })
     },[])
 
+    console.log(pais)
 
     return(
         <div className='menu-container'>
@@ -53,13 +79,20 @@ export const Menu = () =>{
             </div>
 
             <div>
-                <h2>Pais</h2>
-                <p>Moneda:{datosUsuario.pais}</p>
-                <h3></h3>
-                <p>Capital:</p>
-                <h3></h3>
-                <p>Presidente</p>
-                <h3></h3>
+                <div>
+                    <h2>Pais</h2>
+                    <p>Moneda:{pais.moneda}</p>
+                </div>
+
+                <div>
+                    <p>Capital:</p>
+                    <h3>{pais.capital}</h3>
+                </div>
+
+                <div>
+                    <p>Presidente</p>
+                    <h3>{pais.presidente}</h3>
+                </div>
             </div>
 
             <button className='btn btn-danger' onClick={()=>handleCerrar()}>Cerrar Sesion</button>
