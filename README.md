@@ -18,10 +18,10 @@ ponemos  **json-server --watch dbUsuarios.json --port 3001**
 
 ### Diseño de Login ###
 >el diseño es basico ya que lo que busco que practicar es con react
-##Login##
-![imagen1]https://github.com/FxIvan/login/blob/main/imgReadme/login1.png?raw=true
+## Login ##
+![imagen1](https://github.com/FxIvan/login/blob/main/imgReadme/login1.png?raw=true)
 
-##Dentro de la Sesion##
+## Dentro de la Sesion ##
 ![imagen2](https://github.com/FxIvan/login/blob/main/imgReadme/dentrodeLogin.png?raw=true)
 
 
